@@ -1,4 +1,4 @@
-/* 
+/*
 
  * Modify the contents of the function below, such that:
  *
@@ -14,24 +14,21 @@
  * in minutes.
  */
 
-const whatToDoForLunch = function (hungry, availableTime) {
+const whatToDoForLunch = function(hungry, availableTime) {
 
   let astring = ' ';
-  let elsesum = 0
-  if (hungry && availableTime < 20) {
-    astring = 'pick something up and eat in back in the Lab'
-  }
-  else if (hungry && (availableTime => 20) && availableTime <= 30) {
-    astring = 'you deserve a break and could try a place in Gastown'
-  }
-  else if (hungry && availableTime > 30) {
-    astring = 'But do you really have that much time?'
-  }
-  else if (!hungry)
-    astring = 'get back to work'
 
-  console.log(astring)
-}
+  if (hungry && availableTime < 20) {
+    astring = 'pick something up and eat in back in the Lab';
+  } else if (hungry && (availableTime => 20) && availableTime <= 30) {
+    astring = 'you deserve a break and could try a place in Gastown';
+  } else if (hungry && availableTime > 30) {
+    astring = 'But do you really have that much time?';
+  } else if (!hungry)
+    astring = 'get back to work';
+
+  console.log(astring);
+};
 /*
  * This is some test runner code that's simply calling our whatToDoForLunch function
  * defined above to verify we're making the right decisions. Do not modify it!
